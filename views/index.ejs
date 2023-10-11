@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
+  <%- include("./partials/head") %> 
   <body>
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
+    <div>
+      <% messages.forEach(message => { %>
+        <div>
+          <h2><%= message.user %></h2>
+          <p><%= message.text %></p>
+          <p><%= message.added.toLocaleString('en-US') %></p>
+        </div>
+      <% }) %> 
+    </div>
   </body>
 </html>
