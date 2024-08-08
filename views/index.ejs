@@ -7,10 +7,12 @@
     <a href="/new">Send a message</a>
     <div>
       <% messages.forEach(message => { %>
-        <div>
-          <h2><%= message.user %></h2>
-          <p><%= message.text %></p>
-          <p><%= message.added.toLocaleString('en-US') %></p>
+        <div class="message-display">
+          <div class="name-message">
+            <h2><%= message.user %></h2>
+            <p><%= message.text %></p>
+          </div>
+          <p class="date-time"><%= message.added.toLocaleString('en-US') %></p>
         </div>
       <% }) %> 
     </div>
