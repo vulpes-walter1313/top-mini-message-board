@@ -50,3 +50,8 @@ a {
   flex-direction: column;
   gap: 0.25rem;
 }
+.form-errors {
+  max-width: 30rem;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
