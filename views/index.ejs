@@ -9,10 +9,10 @@
       <% messages.forEach(message => { %>
         <div class="message-display">
           <div class="name-message">
-            <h2><%= message.user %></h2>
+            <h2><%= message.username %></h2>
             <p><%= message.text %></p>
           </div>
-          <p class="date-time"><%= message.added.toLocaleString('en-US') %></p>
+          <p class="date-time"><%= message.createdat %></p>
         </div>
       <% }) %> 
     </div>
